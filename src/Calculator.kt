@@ -10,7 +10,7 @@ class Calculator {
                 "1. Суд общей юрисдикции\n" +
                 "2. Арбитражный суд")
 
-        val courtType = if(giveOption() == 1) CourtType.COMMON else CourtType.ARBITRAL
+        val courtType = if(giveOption() == 1) CourtType.COMMON else CourtType.ARBITRAG
 
         println("Ввыберите тип лица:\n" +
                 "1. Физическое лицо\n" +
