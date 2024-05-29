@@ -3,7 +3,7 @@ import java.util.*
 fun calculate(courtType: CourtType, entityType: EntityType, value : Double) : Double { // Здесь нужно будет прописать формулы рассчета
     when (courtType) {
         CourtType.ARBITRAG -> when (entityType) {
-            EntityType.INDIVIDUAL -> if(value)
+            EntityType.INDIVIDUAL -> if(value <= 100_000) value * 4 / 100
             EntityType.LEGAL -> TODO()
         }
 
